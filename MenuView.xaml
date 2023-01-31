@@ -1,0 +1,159 @@
+﻿<UserControl x:Class="SodaBarProject.MenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SodaBarProject"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="650">
+    <Grid Background="Transparent">
+        <StackPanel >
+            <Label Height="44" FontSize="23" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="White" Background="Transparent" BorderThickness="2">Create Your own Soda</Label>
+            <Border Height="39">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0" Stroke="White" StrokeThickness="3">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Uniform" ImageSource="{StaticResource 1}" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label  Grid.Column="1" VerticalAlignment="Center" FontSize="19" FontWeight="Bold" Foreground="White" Width="148" HorizontalAlignment="Left" BorderBrush="White" Background="Transparent" BorderThickness="2">Choose A Soda</Label>
+                </Grid>
+            </Border>
+            <Border Height="120">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Height="32" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2" >CocoCola ($2)</Label>
+                    <Label Height="32" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">SevenUp ($2)</Label>
+                    <Label Height="32" Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">DrPepper ($3)</Label>
+                    <Label Height="32" Grid.Row="0" Grid.Column="7" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">Sprite ($2)</Label>
+                    <Rectangle Grid.Column="1" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource cocacola}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="3" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource sevenup}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="5" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource drpepper}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="7" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource sprite}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <RadioButton x:Name="CocaCola" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" IsChecked="True"  Click="Soda_Click"/>
+                    <RadioButton x:Name="SevenUp" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" Click="Soda_Click"/>
+                    <RadioButton x:Name="DrPepper" Grid.Row="2" Grid.Column="5"  HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" Click="Soda_Click"></RadioButton>
+                    <RadioButton x:Name="Sprite" Grid.Row="2" Grid.Column="7" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" Click="Soda_Click"></RadioButton>
+                </Grid>
+            </Border>
+            <Separator Width="650" BorderThickness="20" BorderBrush="White"></Separator>
+            <Border Height="40">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0" Stroke="White" StrokeThickness="3">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Uniform" ImageSource="{StaticResource 2}" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Label Grid.Column="1" VerticalAlignment="Top" FontSize="19" FontWeight="Bold" Foreground="White" Width="155" HorizontalAlignment="Left" BorderBrush="White" Background="Transparent" BorderThickness="2">Choose A Syrup</Label>
+                </Grid>
+            </Border>
+            <Border Height="120">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="190"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Height="32" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">Coconut ($1)</Label>
+                    <Label Height="32" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">Strawbery($1)</Label>
+                    <Label Height="32" Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">Vanilla ($2)</Label>
+                    <Label Height="32" Grid.Row="0" Grid.Column="7" HorizontalAlignment="Center" Foreground="White" FontSize="14" BorderBrush="White" Background="Transparent" BorderThickness="2">Cherry ($2)</Label>
+                    <Rectangle Grid.Column="1" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource coconut}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="3" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource strawberry}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="5" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource vanilla}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="7" Grid.Row="1">
+                        <Rectangle.Fill>
+                            <ImageBrush Stretch="Fill" ImageSource="{StaticResource cherry}"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <RadioButton x:Name="Coconut" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="3" BorderBrush="Black" Click="Syrup_Click"/>
+                    <RadioButton x:Name="Strawberry" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" Click="Syrup_Click"></RadioButton>
+                    <RadioButton x:Name="Vanilla" Grid.Row="2" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" IsChecked="True" Click="Syrup_Click"></RadioButton>
+                    <RadioButton x:Name="Cherry" Grid.Row="2" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Black" Click="Syrup_Click"></RadioButton>
+                </Grid>
+            </Border>
+            <Separator Width="650" BorderThickness="20" BorderBrush="White"></Separator>
+            <WrapPanel>
+                <StackPanel Margin="15,0,0,0">
+                    <Label Width="80" Height="25" Foreground="White" FontSize="14">QUANTITY</Label>
+                    <Border Width="120" Height="35"  BorderThickness="2" CornerRadius="4" BorderBrush="White" >
+                        <TextBox x:Name="Quantity" Width="120" Height="30" TextAlignment="Center" FontSize="22" Foreground="White" Background="Transparent" MaxLength="2" FontWeight="Bold">1</TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Margin="90,10,0,0">
+                    <Border  Height="50" BorderBrush="White" BorderThickness="2" CornerRadius="4" Width="150" >
+                        <Button x:Name="Confirm_Order" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="White" Click="Confirm_Order_Click">Confirm Order</Button>
+                    </Border>
+                </StackPanel>
+                <StackPanel Margin="90,10,0,0">
+                    <Border Height="50" BorderBrush="White" BorderThickness="2" CornerRadius="4" Width="155" >
+                        <Button x:Name="Toggle_Grand_Total" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="White" Click="Toggle_Grand_Total_Click">Toggle NetAmount
+                        </Button>
+                    </Border>
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
