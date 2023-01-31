@@ -1,0 +1,29 @@
+﻿<Application x:Class="SodaBarProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SodaBarProject"
+             StartupUri="LoginWindow.xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="bg" UriSource="/Assets/colared.jpg"/>
+        <BitmapImage x:Key="bill" UriSource="/Assets/bill.jpg"/>
+        <BitmapImage x:Key="cocacola" UriSource="/Assets/dietcoke.png"/>
+        <BitmapImage x:Key="sevenup" UriSource="/Assets/sevenup.png"/>
+        <BitmapImage x:Key="sprite" UriSource="/Assets/sprite.png"/>
+        <BitmapImage x:Key="drpepper" UriSource="/Assets/doc.png"/>
+        <BitmapImage x:Key="1" UriSource="/Assets/one.png"/>
+        <BitmapImage x:Key="2" UriSource="/Assets/two.png"/>
+        <BitmapImage x:Key="coconut" UriSource="/Assets/coconut.jpg"/>
+        <BitmapImage x:Key="strawberry" UriSource="/Assets/sberry.png"/>
+        <BitmapImage x:Key="cherry" UriSource="/Assets/Cherry.jpg"/>
+        <BitmapImage x:Key="vanilla" UriSource="/Assets/vanilla.png"/>
+        <BitmapImage x:Key="Icon" UriSource="/Assets/icon.png"/>
+        <BitmapImage x:Key="mky" UriSource="/Assets/monk.png"/>
+        <BitmapImage x:Key="un" UriSource="/Assets/person.png"/>
+        <BitmapImage x:Key="lk" UriSource="/Assets/pass.png"/>
+        <BitmapImage x:Key="image1" UriSource="/Assets/first.jpg"/>
+        <BitmapImage x:Key="logout" UriSource="/Assets/logout.png"/>
+        <BitmapImage x:Key="image2" UriSource="/Assets/img1.jpg"/>
+        <BitmapImage x:Key="image3" UriSource="/Assets/2.jpg"/>
+        <BitmapImage x:Key="Soda" UriSource="/Assets/soda.png"/>
+    </Application.Resources>
+</Application>
